@@ -11,7 +11,8 @@ const Bottombar = () => {
         return (
           <Link
             to={link.route}
-            className={` ${
+            key={link.label}
+            className={` bottombar-link group ${
               isActive && "bg-primary-500 rounded-[10px]"
             } flex-center flex-col gap-1 p-2 transition`}
           >
